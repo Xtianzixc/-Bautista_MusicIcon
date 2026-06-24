@@ -1,0 +1,210 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f7f4ee;
+    color:#333;
+}
+
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 50px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    z-index:1000;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:bold;
+    letter-spacing:8px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#333;
+    margin-left:20px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#888;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:120px 20px;
+    background:#e9e5dd;
+}
+
+.hero-content h1{
+    font-size:70px;
+    letter-spacing:10px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:20px;
+    margin-top:15px;
+}
+
+.home-video{
+    width:100%;
+    max-width:1000px;
+    border-radius:10px;
+    margin:20px 0;
+}
+
+.about{
+    display:flex;
+    align-items:center;
+    gap:50px;
+    padding:100px 80px;
+    background:white;
+}
+
+.about img{
+    width:350px;
+    border-radius:10px;
+}
+
+.about-text{
+    max-width:600px;
+}
+
+.about-text h2{
+    margin-bottom:20px;
+}
+
+.about-text p{
+    line-height:1.8;
+    margin-bottom:20px;
+}
+
+button{
+    background:#cfd2c3;
+    border:none;
+    padding:12px 25px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    opacity:.9;
+}
+
+.music{
+    padding:100px 80px;
+    background:#f9f9f9;
+}
+
+.music h2{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.song{
+    display:flex;
+    justify-content:space-between;
+    padding:15px 0;
+    border-bottom:1px solid #ddd;
+}
+
+#player{
+    width:100%;
+    margin-top:20px;
+}
+
+.album{
+    padding:100px 80px;
+    text-align:center;
+    background:#cfd2c3;
+}
+
+.album img{
+    width:300px;
+    max-width:100%;
+    margin:20px 0;
+    border-radius:10px;
+}
+
+.location{
+    padding:100px 80px;
+    text-align:center;
+    background:white;
+}
+
+.location iframe{
+    border:0;
+    border-radius:10px;
+    margin-top:20px;
+}
+
+.contact{
+    padding:100px 80px;
+    text-align:center;
+}
+
+.contact h2{
+    margin-bottom:25px;
+}
+
+form{
+    max-width:600px;
+    margin:auto;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+textarea{
+    height:120px;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+}
+
+.about{
+    flex-direction:column;
+    text-align:center;
+}
+
+.hero-content h1{
+    font-size:45px;
+}
+
+.about img{
+    width:100%;
+    max-width:350px;
+}
+}
